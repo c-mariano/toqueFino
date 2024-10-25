@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "Futura";
+  src: url(fonts/Futura\ Bold\ font.ttf) format(truetype);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Futura";
+  src: url(fonts/Futura\ Book\ font.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Futura";
+  src: url(fonts/futura\ medium\ bt.ttf);
+  font-weight: medium;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Futura";
+  font-weight: normal;
+  text-decoration: none;
+}
+html {
+  overflow-y: hidden;
+}
+/* header */
+header {
+  justify-content: space-evenly;
+  padding: 10px 0px;
+}
+header,
+.opt-header {
+  display: flex;
+  align-items: center;
+}
+.opt-header a {
+  text-decoration: none;
+  color: #000;
+}
+.opt-header a:hover,
+#btn-login:hover,
+#btn-cad:hover {
+  color: #4b2323ad;
+}
+.pag-titles {
+  display: flex;
+}
+.pag-logo img {
+  width: 50px;
+  padding-top: 7px;
+  padding-right: 5px;
+}
+.login-header {
+  display: grid;
+}
+.opt-header a:not(:last-child) {
+  padding-right: 15px;
+}
+.login-header a,
+.pag-titles,
+.login-header p {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+#btn-menu {
+  display: none;
+}
+
+/* nav */
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #4b2323ad;
+  padding: 20px;
+  color: #fff;
+}
+.nav-bar i {
+  font-size: 0.6rem;
+}
+.nav-bar p {
+  cursor: pointer;
+}
+.nav-bar p:hover {
+  color: #1b0c0cad;
+}
+
+/* box1 */
+main {
+  background-image: url(https://cdn.leonardo.ai/users/28a0c3ee-d699-4be8-9e14-f2125601ad62/generations/08d7c6be-d83f-4718-a71a-9022c95223d1/Leonardo_Kino_XL_image_of_ancient_ruins_in_chestnut_brown_beig_1.jpg);
+  height: 558px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+.box {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 60px;
+}
+.box1 {
+  text-align: center;
+  background-color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.image-shoes img {
+  width: 570px;
+  height: 392.5px;
+  object-fit: cover;
+}
+.description-shoes {
+  padding: 10px;
+}
+.btn-details {
+  padding-bottom: 20px;
+}
+.btn-details span {
+  background-color: #4b2323ad;
+  padding: 5px 120px;
+  color: #fff;
+}
+
+/* slider */
+.slider {
+  margin-bottom: 10px;
+}
+.slides img {
+  width: 570px;
+  height: 392.5px;
+}
+input[type="radio"] {
+  padding: 15px;
+  accent-color: #4b2323ad;
+  display: none;
+}
+.slides label {
+  display: inline-flex; /* Use inline-flex para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  width: 20px; /* Aumenta a largura */
+  height: 20px; /* Aumenta a altura */
+  margin: 5px;
+  border-radius: 50%;
+  border: 3px solid #929292; /* Aumenta a borda para combinar com o tamanho */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.slides label::after {
+  content: "";
+  width: 12px; /* Aumenta o tamanho do círculo interno */
+  height: 12px;
+  background-color: transparent; /* Invisível quando não está selecionado */
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+input[type="radio"]:checked + label::after {
+  background-color: #333; /* Cor interna quando o botão está selecionado */
+}
+
+/* Efeito de hover */
+.slides label:hover {
+  background-color: #f0f0f0; /* Cor do fundo ao passar o mouse */
+}
+
+/* box2 */
+.box2 {
+  display: grid;
+}
+.text-right {
+  color: #fff;
+  text-align: center;
+  max-width: 483px;
+  padding-top: 45px;
+}
+.text-right h1 {
+  text-transform: uppercase;
+}
+.text-right p {
+  font-weight: medium;
+  text-align: justify;
+}
+.news-bag {
+  background-image: url(img/bag.png);
+  width: 483px;
+  height: 243px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.news-bag:hover {
+  transform: scale(1.05); /* Leve aumento de tamanho ao passar o mouse */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais intensa ao hover */
+}
+.news-bag-text {
+  /* margin: 20px 20px;
+  padding-top: 50px; */
+  position: relative; /* Para usar translate */
+  top: 50%; /* Move a div para baixo 50% da altura da viewport */
+  left: 50%; /* Move a div para a direita 50% da largura da viewport */
+  transform: translate(-100%, -50%); /* Move a div para o centro */
+  max-width: 220px;
+  text-align: justify;
+}
+.news-bag-text h3 {
+  text-align: left;
+  font-size: 1.42rem;
+}
+
+/* content-navbar */
+.nav-toggle {
+  display: none;
+}
+.nav-toggle div {
+  justify-content: space-evenly;
+  gap: 20px;
+}
+#toggle-content {
+  display: flex;
+}
+.content-title {
+  padding: 10px 0px 15px 0px;
+}
+.content {
+  padding-bottom: 25px;
+}
+.nav-toggle.pressed {
+  display: grid;
+  position: absolute;
+  top: 50;
+  left: 0;
+  width: 100%; /* Para ocupar a mesma largura */
+  z-index: 2; /* Define o z-index maior para ficar sobre o main */
+  background-color: rgba(255, 255, 255, 1); /* Exemplo de fundo translúcido */
+}
+.content h3,
+.content p {
+  opacity: 75%;
+  cursor: pointer;
+}
+.content h3:hover,
+.content p:hover {
+  opacity: 100%;
+}
+
+/* Responsivo 480px */
+@media (max-width: 480px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+  }
+  .opt-header a {
+    display: none;
+  }
+  .login-header {
+    display: none;
+  }
+  #btn-menu {
+    display: flex;
+    font-size: 1.4rem;
+  }
+  .nav-bar p {
+    display: none;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-shoes img {
+    width: 350px;
+    height: 250px;
+  }
+  .box {
+    gap: 20px;
+  }
+  .box1,
+  .box2 {
+    display: grid;
+    margin: 0 auto;
+  }
+  .text-right {
+    display: none;
+  }
+  .news-bag {
+    max-width: 350px;
+    background-size: 110%;
+    max-height: 190px;
+  }
+  .news-bag-text {
+    transform: translate(-70%, -50%);
+  }
+  .news-bag-text p {
+    font-size: 0.8em;
+    max-width: 160px;
+  }
+  .news-bag-text h3 {
+    font-size: 1.05em;
+    max-width: 160px;
+  }
+  main {
+    height: 100%;
+  }
+}
